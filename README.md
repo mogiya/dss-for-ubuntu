@@ -9,7 +9,7 @@ install
 
     $ sudo apt-get install git make gcc g++
     $ git clone https://github.com/mogiya/dss-for-ubuntu.git
-    $ ./buildtarball
+    $ ./Buildit
     $ sudo ./Install
     $ sudo /etc/init.d/darwin-streaming-server start
 
