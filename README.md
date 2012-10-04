@@ -7,6 +7,7 @@ Test on Ubuntu 12.04 Server
 
 install
 
+    $ sudo apt-get install git make gcc g++
     $ git clone https://github.com/mogiya/dss-for-ubuntu.git
     $ ./buildtarball
     $ sudo ./Install
