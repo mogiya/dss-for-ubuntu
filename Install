@@ -296,9 +296,9 @@ fi
 	chmod 775 /usr/local/movies
 
         if [ -d /etc/init.d ]; then
-            echo copying "dss" to "/etc/init.d/dss"
-            cp -f dss /etc/init.d/dss
-            chmod 755 /etc/init.d/dss
+            echo copying "darwin-streaming-server" to "/etc/init.d/darwin-streaming-server"
+            cp -f darwin-streaming-server /etc/init.d/dss
+            chmod 755 /etc/init.d/darwin-streaming-server
         fi
 	
     echo copying "sample_100kbit.mov" into "/usr/local/movies/sample_100kbit.mov"
