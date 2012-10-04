@@ -297,7 +297,7 @@ fi
 
         if [ -d /etc/init.d ]; then
             echo copying "darwin-streaming-server" to "/etc/init.d/darwin-streaming-server"
-            cp -f darwin-streaming-server /etc/init.d/dss
+            cp -f darwin-streaming-server /etc/init.d/darwin-streaming-server
             chmod 755 /etc/init.d/darwin-streaming-server
         fi
 	
@@ -423,6 +423,11 @@ fi
 		
 	chown -R -f qtss /etc/streaming/
 	
+        # Start darwin streaming server
+        if [ -d /etc/init.d ]; then
+            /etc/init.d/darwin-streaming-server start
+        fi
+
 	echo Setup Complete!
 	
 else
